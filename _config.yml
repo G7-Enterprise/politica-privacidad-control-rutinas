@@ -1,0 +1,59 @@
+# Configuración para GitHub Pages
+title: "Política de Privacidad - Biblioteca Legal NICA"
+description: "Política de privacidad oficial de la aplicación Biblioteca Legal NICA desarrollada por G7 Enterprise"
+author: "G7 Enterprise"
+email: "bibliotecalegalnica@gmail.com"
+
+# Configuración del sitio
+baseurl: "/politica-privacidad-biblioteca-legal-nica"
+url: "https://g7-enterprise.github.io"
+
+# Configuración de Jekyll
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Configuración de navegación
+navigation:
+  - title: "Política de Privacidad"
+    url: "/politica-privacidad"
+  - title: "Contacto"
+    url: "/contacto"
+  - title: "GitHub"
+    url: "https://github.com/G7-Enterprise"
+
+# Configuración de metadatos
+social:
+  github: "G7-Enterprise"
+  email: "bibliotecalegalnica@gmail.com"
+
+# Configuración de build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+
+# Configuración de colecciones
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Configuración de defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
